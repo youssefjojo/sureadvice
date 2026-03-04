@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+:root {
+  --color-dark: #000000;
+  --color-off-white: #F7F7F7;
+  --color-yellow: #FFB22C;
+  --color-brown: #854836;
+  --color-brown-light: #a05e4a;
+  --color-brown-dark: #6a3a2b;
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-dark: var(--color-dark);
+  --color-brand-offwhite: var(--color-off-white);
+  --color-brand-yellow: var(--color-yellow);
+  --color-brand-brown: var(--color-brown);
+  --color-brand-brown-light: var(--color-brown-light);
+  --color-brand-brown-dark: var(--color-brown-dark);
+  --font-sans: var(--font-roboto);
+  --font-heading: var(--font-work-sans);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-off-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brown);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brown-dark);
+}
+
+/* Section spacing */
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+  }
+}
