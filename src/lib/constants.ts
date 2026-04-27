@@ -14,7 +14,7 @@ export const COMPANY = {
 
 export const CONTACT = {
   phone: "+20 115 675 5584",
-  email: "hanafy388@gmail.com",
+  email: "info@sure-advice.com",
   whatsapp: "201156755584",
   address: "67 Al-Thawra Street - Golf Land - Cairo, Egypt",
 } as const;
