@@ -97,6 +97,19 @@ export default function ContactPage() {
                   </div>
                 </a>
 
+                <a
+                  href={`mailto:${CONTACT.joinUsEmail}`}
+                  className="flex items-center gap-4 group"
+                >
+                  <div className="p-3 bg-[var(--color-yellow)]/10 rounded-xl group-hover:bg-[var(--color-yellow)]/20 transition-colors">
+                    <Mail size={22} className="text-[var(--color-brown)]" />
+                  </div>
+                  <div>
+                    <p className="text-xs text-gray-500 uppercase tracking-wide">Join Us</p>
+                    <p className="text-gray-900 font-medium">{CONTACT.joinUsEmail}</p>
+                  </div>
+                </a>
+
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-[var(--color-yellow)]/10 rounded-xl">
                     <MapPin size={22} className="text-[var(--color-brown)]" />
