@@ -44,11 +44,4 @@ export const portfolioItems: PortfolioItem[] = [
     description:
       "Employee outsourcing and payroll processing for Drova operations.",
   },
-  {
-    slug: "erctra",
-    title: "Erctra",
-    category: "Business Development",
-    image: "/images/portfolio/erctra.jpg",
-    description: "Market expansion and partnership building for Erctra.",
-  },
 ];
