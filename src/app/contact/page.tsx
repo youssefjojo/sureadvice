@@ -96,7 +96,7 @@ export default function ContactPage() {
                     <p className="text-gray-900 font-medium">{CONTACT.email}</p>
                   </div>
                 </a>
-
+{/* 
                 <a
                   href={`mailto:${CONTACT.joinUsEmail}`}
                   className="flex items-center gap-4 group"
@@ -108,7 +108,7 @@ export default function ContactPage() {
                     <p className="text-xs text-gray-500 uppercase tracking-wide">Join Us</p>
                     <p className="text-gray-900 font-medium">{CONTACT.joinUsEmail}</p>
                   </div>
-                </a>
+                </a> */}
 
                 <div className="flex items-center gap-4">
                   <div className="p-3 bg-[var(--color-yellow)]/10 rounded-xl">
