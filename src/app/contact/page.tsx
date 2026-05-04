@@ -30,9 +30,16 @@ export default function ContactPage() {
   });
 
   const onSubmit = async (data: ContactForm) => {
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log("Form data:", data);
+    const { name, email, phone, subject, message } = data;
+    const body = `Name: ${name}\nEmail: ${email}\nPhone: ${phone ?? ""}\n\nMessage:\n${message}`;
+    const mailto = `mailto:info@sure-advice.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    if (typeof window !== "undefined") {
+      window.location.href = mailto;
+    }
+
     setSubmitted(true);
     reset();
     setTimeout(() => setSubmitted(false), 5000);
